@@ -1,2 +1,2 @@
-# CODSOFT_Portfolio
+# Portfolio_CODSOFT
 Creation of Personal Portfolio
