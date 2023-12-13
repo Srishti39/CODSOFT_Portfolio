@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: paleturquoise;
+}
+
+a{
+    text-decoration: none;
+}
+
+.personal{
+    height: 100vh;
+    width: 100vw;
+    background: paleturquoise;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 2px 100px ;
+    background: turquoise;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: midnightblue;
+    cursor: pointer;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+    border: 4px solid midnightblue;
+    border-right: transparent;
+    padding-left: 5px;
+    color: crimson;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px 40px;
+}
+
+nav ul li a{
+    color:midnightblue;
+    position: relative;
+    padding: 2px 75px;
+    font-size: large;
+}
+
+nav ul li a:hover{
+    color:blue;
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: blue;
+    transition: .3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: cadetblue;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+    border: 2px solid steelblue;
+}
+
+.btn:hover{
+    background: lightsteelblue;
+    color: navy;
+}
+
+
+
+.details{
+    position: absolute;
+    top: 35%;
+    bottom: 8%;
+    padding-left: 55px;
+}
+
+.details h1{
+    color:midnightblue;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.details h1 span{
+    color:crimson;
+}
+
+.details h3{
+    color: midnightblue;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.image img{
+    display: block;
+    width: 120%;
+    height: auto;
+}
+
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+
+
+#about {
+    color: midnightblue;
+    font-size: 20px;
+    line-height: 1.4;
+    background-color: paleturquoise;
+    margin-bottom: 130px;
+}
+
+.about .about-text {
+    padding: 100px;
+}
+
+.about .about-text h2 {
+    text-align: center;
+    font-size: 60px;
+    color: midnightblue;
+}
+
+.about .about-text h2 span {
+    color: firebrick;
+}
+
+.about .about-text h4 {
+    color: midnightblue;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+
+
+#skills {
+    color: midnightblue;
+    font-size: 20px;
+    line-height: 1.4;
+    background-color: paleturquoise;
+    margin-bottom: 100px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 700px;
+    color: midnightblue;
+}
+
+.sub-title span {
+    color: firebrick;
+}
+
+.stuff {
+    padding: 100px;
+}
+
+.skills-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.skills-list div {
+    background-color: lightcyan;
+    padding: 50px;
+    font-size: 14px;
+    font-weight: 14px;
+    border-right: 100px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px darkblue, 1px 1px 40px steelblue;
+}
+
+.skills-list div:hover {
+    transform: translateY(-10px);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid whitesmoke;
+    background: darkblue;
+    display: inline-block;
+}
+
+
+
+#projects {
+    color: midnightblue;
+    font-size: 20px;
+    line-height: 1.4;
+    background-color: paleturquoise;
+    padding-bottom: 200px;
+}
+
+.sub-title {
+    text-align: justify;
+    font-size: 60px;
+    padding-bottom: 10px;
+    color: midnightblue;
+}
+
+.sub-title span {
+    color:firebrick;
+}
+
+.container {
+    padding: 100px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
+    grid-gap: 70px;
+    margin-top: 50px;
+}
+
+.projects-list div {
+    background-color: lightcyan;
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 14px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px darkblue, 1px 1px 40px steelblue;
+}
+
+.projects-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.projects-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.projects-list div a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: skyblue;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.read:hover {
+    box-shadow: 0 0 15px royalblue;
+}
+
+.projects-list div:hover {
+    transform: translateY(-10px);
+}
+
+
+
+#connect {
+    width: 80%; 
+    margin: 0 auto;
+    margin-bottom: 150px; /* Adjust this value as needed */
+    padding: 20px;
+    border: 3px solid steelblue;
+    border-radius: 5px;
+    background: lightcyan;
+}
+
+.sub-title {
+    text-align: center;
+    color: midnightblue; 
+}
+
+.connect div h3 {
+    color: midnightblue;
+}
+
+.connect-logo a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid cornflowerblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease;
+    opacity: 1;
+    animation: slideLeft 3s ease forwards;
+    animation-delay: calc(0.5s * var(--i));
+    margin: 30px 15px 30px 0;
+}
+
+.connect-logo a:hover {
+    background: white;
+    color: chocolate;
+    box-shadow: 0 0 20px navy;
+}
+
+
+
+#footer {
+    text-align: center;
+    padding-top: 100px;
+    background-color: turquoise;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

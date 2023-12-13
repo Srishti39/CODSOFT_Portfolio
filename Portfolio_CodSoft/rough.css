@@ -1,0 +1,256 @@
+/* This is for Background and Picture */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.personal{
+    height: 100vh;
+    width: 100vw;
+    background: burlywood;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px ;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: maroon;
+    cursor: pointer;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+    border: 4px solid maroon;
+    border-right: transparent;
+    padding-left: 5px;
+    color: crimson;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color:midnightblue;
+    position: relative;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul li a:hover{
+    color:darkslateblue;
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: midnightblue;
+    transition: .3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: red;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+    border: 2px solid salmon;
+}
+
+.btn:hover{
+    background: lightblue;
+    color: blueviolet;
+}
+
+.details{
+    position: absolute;
+    top: 35%;
+    bottom: 8%;
+    padding-left: 55px;
+}
+
+.details h1{
+    color:midnightblue;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.details h1 span{
+    color:crimson;
+}
+
+.details p{
+    color: midnightblue;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.image img{
+    display: block;
+    width: 85%;
+    height: auto;
+}
+
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+
+
+/* This is for Projects */
+
+#projects {
+    color: midnightblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 5rem;
+  }
+  
+  .sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+  }
+  
+  .sub-title span {
+    color: crimson;
+  }
+  
+  .container {
+    padding: 100px;
+  }
+  
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
+    grid-gap: 70px;
+    margin-top: 50px;
+  }
+  
+  .projects-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 14px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px blue, 1px 1px 40px lightblue;
+  }
+  
+  .projects-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .projects-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .projects-list div a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: crimson;
+    border-radius: 40px;
+    font-size: 16px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 3s ease forwards;
+    animation-delay: 5s;
+    box-shadow: 0 0 5px green, 0 0 25px cornflowerblue;
+  }
+  
+  .read:hover {
+    box-shadow: 0 0 5px red, 0 0 25px royalblue, 0 0 50px cyan, 0 0 10px royalblue,
+      0 0 200px royalblue;
+  }
+  
+  .projects-list div:hover {
+    transform: translateY(-10px);
+  }
+  
+
+/* Connect With Me */
+
+
+.connect .sub-title {
+    text-align: center;
+    font-size: 30px; /* Reduced font size */
+    color: navy;
+}
+
+.connect .sub-title span {
+    color: firebrick;
+}
+
+.connect form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.connect input, .connect textarea {
+    background-color: lightcyan;
+    padding: 5px; /* Reduced padding */
+    font-size: 14px;
+    font-weight: 14px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px darkblue, 1px 1px 40px steelblue;
+}
+
+.connect input[type="submit"] {
+    background-color: darkblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.connect input[type="submit"]:hover {
+    transform: translateY(-10px);
+}
